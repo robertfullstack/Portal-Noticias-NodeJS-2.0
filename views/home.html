@@ -37,7 +37,7 @@
                                     <%= posts[i].titulo%>
                                 </h2>
                                 <p>
-                                    <%= posts[i].descricaoCurta%>...
+                                    <%- posts[i].descricaoCurta%>...
                                 </p>
                                 <a href="<%= posts[i].slug%>">Saiba mais</a>
                             </div>
@@ -56,7 +56,7 @@
                                         <%= postsTop[i].categoria%>
                                     </h4>
                                     <p>
-                                        <%= postsTop[i].descricaoCurta%>
+                                        <%- postsTop[i].descricaoCurta%>
                                     </p>
                                     <p>(<%= postsTop[i].views%> views)</p>
                                     <a href="<%= postsTop[i].slug%>">Saiba mais</a>
