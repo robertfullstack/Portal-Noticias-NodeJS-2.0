@@ -13,6 +13,6 @@ var postSchema = new Schema({
 }, { collection: 'posts' })
 
 
-var Posts = mongoose.model("posts", postSchema)
+var Posts = mongoose.model("posts", postSchema);
 
 module.exports = Posts;
