@@ -56,7 +56,12 @@ app.get('/', (req, res) => {
 
 
     } else {
-        res.render('busca', {});
+        Posts.find({ titulo: { $regex: req.query.busca, $options: "i" } }, (error, posts) => {
+            console.log(posts)
+            res.render('busca', {
+                posts: posts, contagem: posts.length, descricaoCurta: posts
+            });
+        })
     }
 });
 
